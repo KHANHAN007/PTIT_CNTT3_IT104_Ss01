@@ -1,9 +1,9 @@
-const creatUser = (name, age = 18, role = "user") => {
-    return {
-        name,
-        age,
-        role
-    };
-}
-console.log(creatUser("Dev"));
-console.log(creatUser("Nguyen Van A", 20, "admin"));
+const createUser = (name, age = 18, role = "user") => {
+  return {
+    name,
+    age,
+    role,
+  };
+};
+console.log(createUser("Dev"));
+console.log(createUser("Nguyen Van A", 20, "Admin"));

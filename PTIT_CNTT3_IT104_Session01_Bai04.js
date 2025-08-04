@@ -1,13 +1,13 @@
 const checkParity = (a) => {
-    if (typeof a !== 'number' || isNaN(a)) {
-        console.log(`${a} not is number`);
-        return;
-    }
-    else {
-        console.log(`${a} is ${a % 2 === 0 ? 'even' : 'odd'}`);
-    }
-}
+  if (typeof a !== 'number') {
+    console.log(`${a} khong phai la so`);
+  } else if (a % 2 === 0) {
+    console.log(`${a} la so chan`);
+  } else {
+    console.log(`${a} la so le`);
+  }
+};
 
-checkParity("abc");
-checkParity(4);
-checkParity(9);    
+checkParity("hello");
+checkParity(10);
+checkParity(7); 
